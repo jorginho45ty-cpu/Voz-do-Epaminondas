@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz do Campus | Portal de Notícias Estudantis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-badge">🎓</span>
+                <span class="logo-text">Voz do <span class="highlight">Epaminondas</span></span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Início</a></li>
+                    <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                    <li><a href="#carreiras" class="nav-link">Carreiras</a></li>
+                    <li><a href="#opiniao" class="nav-link">Opinião</a></li>
+                    <li><a href="#contato" class="btn btn-primary">Mandar Pauta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sub-header com Avisos/Trending -->
+    <div class="sub-header">
+        <div class="container sub-header-container">
+            <span class="trending-tag">EM DESTAQUE</span>
+            <p class="trending-text">Período de inscrições para bolsas de iniciação científica vai até a próxima sexta-feira!</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+
+        <!-- Grid do Hero/Destaque Principal -->
+        <section class="hero-grid">
+            <article class="hero-card main-hero">
+                <div class="card-image-wrapper">
+                    <img src="banner.png">
+                    <span class="badge category-campus">Vida no Epa</span>
+                </div>
+                <div class="card-content">
+                    <div class="meta-info">
+                        <span>🕒 Há 2 horas</span>
+                        <span>•</span>
+                        <span>✍️ Por Izaias Castro</span>
+                    </div>
+                    <h2><a href="#">Novo Centro Acadêmico de Tecnologia, computação e ciências é inaugurado com laboratórios </a></h2>
+                    <p>Espaço conta com salas climatizadas, salas de estudo acústicas e área de convivência integrada para projetos interdisciplinares.</p>
+                </div>
+            </article>
+
+            <div class="secondary-heroes">
+                <article class="hero-card secondary-hero">
+                    <div class="card-image-wrapper">
+                        <img src="semana.png">
+                        <span class="badge category-eventos">Eventos</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta-info">
+                            <span>🕒 Há 25 minutos</span>
+                        </div>
+                        <h3><a href="#">Semana de Inovação Acadêmica abre inscrições para submissão de programação</a></h3>
+                    </div>
+                </article>
+
+                <article class="hero-card secondary-hero">
+                    <div class="card-image-wrapper">
+                        <img src="computador.jpg">
+                        <span class="badge category-carreiras">Carreiras</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="meta-info">
+                            <span>🕒 Há 5 segundos</span>
+                        </div>
+                        <h3><a href="#">Epaminondas tem mais de 100 alunos escritos para programaçâo</a></h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Layout Principal com Feed e Sidebar -->
+        <div class="content-layout" id="noticias">
+            
+            <!-- Feed de Notícias -->
+            <section class="news-feed">
+                <div class="section-header">
+                    <h2>Últimas Atualizações</h2>
+                    <div class="filter-tags">
+                        <span class="filter-tag active">Todas</span>
+                        <span class="filter-tag">inscrições</span>
+                        <span class="filter-tag">Estágios</span>
+                        <span class="filter-tag">Cultura</span>
+                    </div>
+                </div>
+
+                <div class="articles-list">
+                    <!-- Artigo 1 -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=500&q=80" alt="Reunião do restaurante universitário">
+                            <span class="badge category-Epa">Epa</span>
+                        </div>
+                        <div class="article-body">
+                            <div class="meta-info">
+                                <span>24 Set, 2026</span>
+                                <span>•</span>
+                                <span>4 min de leitura</span>
+                            </div>
+                            <h3><a href="#">Cardápio escola escolhido pelos alunos EPA</a></h3>
+                            <p>Após pesquisa realizada pelo Diretório Central dos Estudantes, a administração aprovou as mudanças no menu diário.</p>
+                            <div class="article-footer">
+                                <span class="author">Por leandro Henrique</span>
+                                <a href="#" class="read-more">Ler matéria →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artigo 2 -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=500&q=80" alt="Livros de estudo">
+                            <span class="badge category-opiniao">Opinião</span>
+                        </div>
+                        <div class="article-body">
+                            <div class="meta-info">
+                                <span>23 Set, 2026</span>
+                                <span>•</span>
+                                <span>6 min de leitura</span>
+                            </div>
+                            <h3><a href="#">Artigo: A importância da saúde mental durante o período de provas finais e horário escolar</a></h3>
+                            <p>Especialistas e estudantes debatem estratégias para manter o equilíbrio emocional e a rotina de estudos em dia.</p>
+                            <div class="article-footer">
+                                <span class="author">Por Maria Eduarda</span>
+                                <a href="#" class="read-more">Ler matéria →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artigo 3 -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="jogo.png">
+                            <span class="badge category-esportes">Interclasse</span>
+                        </div>
+                        <div class="article-body">
+                            <div class="meta-info">
+                                <span>22 Set, 2026</span>
+                                <span>•</span>
+                                <span>3 min de leitura</span>
+                            </div>
+                            <h3><a href="#">Atlética de Engenharias garante vaga na final do Torneio Interuniversitário</a></h3>
+                            <p>Com vitória expressiva no futsal masculino e basquete feminino, a equipe se consolida como favorita no campeonato.</p>
+                            <div class="article-footer">
+                                <span class="author">Por william andrade</span>
+                                <a href="#" class="read-more">Ler matéria →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sidebar Lateral -->
+            <aside class="sidebar">
+                <!-- Card Agenda de Eventos -->
+                <div class="widget events-widget" id="eventos">
+                    <h3 class="widget-title">📅 Próximos Eventos</h3>
+                    <ul class="event-list">
+                        <li class="event-item">
+                            <div class="event-date">
+                                <span class="day">28</span>
+                                <span class="month">SET</span>
+                            </div>
+                            <div class="event-details">
+                                <h4> Interclasse 28/09/2026</h4>
+                                <p>📍 Quadrilhodomo • 09:00</p>
+                            </div>
+                        </li>
+                        <li class="event-item">
+                            <div class="event-date">
+                                <span class="day">20</span>
+                                <span class="month">NOV</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Dia da conciência NEGRA</h4>
+                                <p>📍 Palestra EPA• 10:00</p>
+                            </div>
+                        </li>
+                        <li class="event-item">
+                            <div class="event-date">
+                                <span class="day">30</span>
+                                <span class="month">OUT</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Laboratório de ciências finalizado</h4>
+                                <p>📍 NO EPA! • 14:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card Newsletter -->
+                <div class="widget newsletter-widget">
+                    <h3 class="widget-title">📩 Jornal no seu E-mail</h3>
+                    <p>Receba o resumo das principais notícias do EPA todas as sextas-feiras.</p>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <input type="email" placeholder="Seu e-mail acadêmico..." required class="form-input">
+                        <button type="submit" class="btn btn-secondary">Inscrever-se</button>
+                    </form>
+                </div>
+
+                <!-- Card Edição Impressa / PDF -->
+                <div class="widget pdf-widget">
+                    <span class="pdf-icon">📰</span>
+                    <h3>Edição Impressa em PDF</h3>
+                    <p>Baixe a versão mensal do jornal para ler onde quiser.</p>
+                    <a href="#" class="btn btn-outline">Baixar Edição #42</a>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-badge">🎓</span>
+                    <span class="logo-text">Voz do <span class="highlight">EPAMINONDAS</span></span>
+                </a>
+                <p>O jornal independente feito por estudantes, para estudantes. Dando voz à comunidade acadêmica desde 2018.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Editorias</h4>
+                <ul>
+                    <li><a href="#">Vida No EPA</a></li>
+                    <li><a href="#">Oportunidades</a></li>
+                    <li><a href="#">Pesquisa e Ciência</a></li>
+                    <li><a href="#">Cultura e Arte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Equipe Editorial</a></li>
+                    <li><a href="#">Código de Ética</a></li>
+                    <li><a href="#">Anuncie Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>Email: jornal@vozdoEpaminondas.edu.br</p>
+                <p>Redação: Sala 204 - Bloco de Comunicação</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Voz do Epaminondas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com HTML & CSS Puro.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
